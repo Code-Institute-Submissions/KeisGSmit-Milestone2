@@ -2,7 +2,7 @@
 
 Creating a custom memory game is something you would never think would be possible.
 I have decided to take one of my favorite (and addicting) video games and turn it into a memory game.
-This is "Hearthstone Memory". This is to be played in the exact same way the the original memory game, from Hasbros.
+This is "Hearthstone Memory". This is to be played in the exact same way as the original memory game, from Hasbros.
  
 ## UX
  
