@@ -7,5 +7,7 @@ img {
     position: center;
 }
 img:hover{
-    box-shadow: 0 0 40px 20px #0ff;
+    z-index: 2;
+    border-radius: 50%;
+    box-shadow: 0 0 40px 20px #D4D45B;
 }
