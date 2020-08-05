@@ -1,0 +1,11 @@
+div{
+    position: relative;
+}
+
+img {
+    height: 20vh;
+    position: center;
+}
+img:hover{
+    box-shadow: 0 0 40px 20px #0ff;
+}
