@@ -17,7 +17,7 @@ img {
     height: 20vh;
     position: center;
     margin: 20px;
-    border-radius: 5%;
+    border-radius: 7%;
 }
 img:hover{
     z-index: 2;
