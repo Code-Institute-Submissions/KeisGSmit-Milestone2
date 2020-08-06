@@ -8,6 +8,6 @@ img {
 }
 img:hover{
     z-index: 2;
-    border-radius: 50%;
+    border-radius: 5%;
     box-shadow: 0 0 40px 20px #D4D45B;
 }
