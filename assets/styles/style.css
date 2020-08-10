@@ -25,6 +25,9 @@ body{
     position: relative;
     transform: scale(1);
 }
+.flip{
+    transform: rotateY(180deg);
+}
 img {
     height: 100%;
     width: auto;
