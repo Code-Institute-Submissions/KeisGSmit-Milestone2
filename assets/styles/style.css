@@ -20,6 +20,7 @@ body{
     border: 5px solid #0044ff;
     width: 16.666%;
     height: 30%;
+    position: relative;
 }
 img {
     height: 20vh;
@@ -31,4 +32,8 @@ img:hover{
     z-index: 2;
     box-shadow: 0 0 40px 20px #D4D45B;
     height: 22vh;
+}
+.back,
+.front{
+    position: absolute;
 }
