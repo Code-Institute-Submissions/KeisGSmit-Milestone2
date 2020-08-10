@@ -34,11 +34,14 @@ img {
 }
 img:hover{
     z-index: 2;
-    box-shadow: 0 0 40px 20px #D4D45B;
+    box-shadow: 0 0 20px 20px #D4D45B;
 }
 .card:active{
     transform: scale(.97);
     transition: transform .2s;
+}
+.front{
+    visibility: hidden;
 }
 .back,
 .front{
