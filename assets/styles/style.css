@@ -1,15 +1,39 @@
-div{
-    position: relative;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
+body{
+    height: 100vh;
+    background: #000000;
+}
+
+.board{
+    display: flex;
+    border: 5px solid #ff0000;
+    height: 100vh;
+    width: 90vw;
+    flex-wrap: wrap;
+}
+.card{
+    border: 5px solid #0044ff;
+    width: 16.666%;
+    height: 30%;
+    position: relative;
+}
 img {
     height: 20vh;
     position: center;
     margin: 20px;
+    border-radius: 7%;
 }
 img:hover{
     z-index: 2;
-    border-radius: 5%;
     box-shadow: 0 0 40px 20px #D4D45B;
     height: 22vh;
+}
+.back,
+.front{
+    position: absolute;
 }
