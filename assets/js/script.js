@@ -19,9 +19,6 @@ $('.card').click(function(){
         //on the second click, a card is flipped and the second card is the card we are currently on
         cardFlipped = false;
         secondCard = this;
-
-        console.log(firstCard);
-        console.log(secondCard);
     }
 });
 
