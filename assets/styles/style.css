@@ -17,6 +17,9 @@ body{
     width: 100vw;
     flex-wrap: wrap;
     margin:auto;
+    perspective: 1000px;
+    transform-style: preserve-3d;
+    transition: transform .5s
 }
 .card{
     border: 2px solid #ff0000;
