@@ -3,26 +3,43 @@
 let cardFlipped = false;
 let firstCard, secondCard; // these 2 variables can vary because it depends on what card you click on, thus they are not declared
 
-
 //When I click on a card I want it to run a function
-$('.card').click(function(){
+var game = $(".card").click(function () {
+  // the card must first be flipped
+  this.classList.add("flip");
 
-    // the card must first be flipped
-    this.classList.add('flip');
+  if (!cardFlipped) {
+    // On first click, a card is flipped and the first card is the card we are currently on
+    cardFlipped = true;
+    firstCard = this;
+  } else {
+    //on the second click, a card is flipped and the second card is the card we are currently on
+    cardFlipped = false;
+    secondCard = this;
 
-    //
-    if (!cardFlipped){
-        // On first click, a card is flipped and the first card is the card we are currently on
-        cardFlipped = true; 
-        firstCard = this;
-    } else {
-        //on the second click, a card is flipped and the second card is the card we are currently on
-        cardFlipped = false;
-        secondCard = this;
-
-        //We need to check if the cards match
-        console.log(firstCard.dataset.match);
-        console.log(secondCard.dataset.match);
-    }
+    matchCheck();
+  }
 });
 
+function matchCheck() {
+  //We need to check if the cards match
+  if (firstCard.dataset.match === secondCard.dataset.match) {
+    // then we need to turn off the click event listener for the first card and the second card
+    cardDisable();
+  } else {
+    //if the cards do not match the cards get flipped back over this has to happen in a certain time period
+    unflip();
+  }
+}
+
+function cardDisable() {
+  $(firstCard).off("click");
+  $(secondCard).off("click");
+}
+
+function unflip() {
+  setTimeout(() => {
+    firstCard.classList.remove("flip");
+    secondCard.classList.remove("flip");
+  }, 1500);
+}
