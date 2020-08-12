@@ -19,6 +19,10 @@ $('.card').click(function(){
         //on the second click, a card is flipped and the second card is the card we are currently on
         cardFlipped = false;
         secondCard = this;
+
+        //We need to check if the cards match
+        console.log(firstCard.dataset.match);
+        console.log(secondCard.dataset.match);
     }
 });
 
