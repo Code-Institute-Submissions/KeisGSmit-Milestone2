@@ -5,7 +5,7 @@ let firstCard, secondCard; // these 2 variables can vary because it depends on w
 
 
 //When I click on a card I want it to run a function
-$('.card').click(function(){
+var game = $('.card').click(function(){
 
     // the card must first be flipped
     this.classList.add('flip');
@@ -21,8 +21,13 @@ $('.card').click(function(){
         secondCard = this;
 
         //We need to check if the cards match
-        console.log(firstCard.dataset.match);
-        console.log(secondCard.dataset.match);
+        if (firstCard.dataset.match === secondCard.dataset.match){
+            // then we need to turn off the click event listener for the first card and the second card
+            $(firstCard).off('click');
+            $(secondCard).off('click');
+        }
+
+        console.log('function was executed');
     }
 });
 
