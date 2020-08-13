@@ -60,3 +60,10 @@ function resetBoard() {
   firstCard = null;
   secondCard = null;
 }
+
+(function shuffle(){
+    $(".cards").forEach(_card => {
+    let positionShuffle = Math.floor(Math.random()* 18); 
+    $('.card').style.order = positionShuffle; 
+    });
+})();
