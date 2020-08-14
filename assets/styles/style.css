@@ -1,74 +1,80 @@
-*{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
-body{
-    height: 100vh;
-    background: #000000;
-    display:flex;
+body {
+  height: 100vh;
+  background: #000000;
+  display: flex;
 }
 
-.board{
-    display: flex;
-    border: 5px solid #ff0000;
-    height: 100vh;
-    width: 100vw;
-    flex-wrap: wrap;
-    margin:auto;
-    perspective: 1000px;
+.board {
+  display: flex;
+  border: 5px solid #ff0000;
+  height: 100vh;
+  width: 100vw;
+  flex-wrap: wrap;
+  margin: auto;
+  perspective: 1000px;
 }
-.card{
-    border: 2px solid #ff0000;
-    background: none;
-    width: 15%;
-    height: 30%;
-    position: relative;
-    transform: scale(1);
-    transform-style: preserve-3d;
-    transition: transform .5s;
+.card {
+  border: 2px solid #ff0000;
+  background: none;
+  width: 15%;
+  height: 30%;
+  position: relative;
+  transform: scale(1);
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
 }
-.card.flip{
-    transform: rotateY(180deg);
+.card.flip {
+  transform: rotateY(180deg);
 }
 img {
-    height: 100%;
-    width: auto;
-    position: center;
-    margin: 20px;
-    border-radius: 7%;
+  height: 100%;
+  width: auto;
+  position: relative;
+  border-radius: 7%;
 }
-img:hover{
-    box-shadow: 0 0 20px 20px #D4D45B;
+img:hover {
+  box-shadow: 0 0 20px 20px #d4d45b;
 }
-.card:active{
-    transform: scale(.97);
-    transition: transform .5s;
+.card:active {
+  transform: scale(0.97);
+  transition: transform 0.5s;
 }
-.front{
-    transform: rotateY(180deg);
+.front {
+  transform: rotateY(180deg);
 }
 .back,
-.front{
-    position: absolute;
-    backface-visibility: hidden;
+.front {
+  position: absolute;
+  backface-visibility: hidden;
 }
-
 
 /* bOOTSTRAP CUSTOM UPPERBOUND BREAK POINTS FOR RESPONSIVE DESIGN */
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media (max-width: 575.98px) { ... }
+@media (max-width: 575.98px) {
+  ...;
+}
 
- /* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) { ... }
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+  ...;
+}
 
 /* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) { ... }
+@media (max-width: 991.98px) {
+  ...;
+}
 
 /* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) { ... }
+@media (max-width: 1199.98px) {
+  ...;
+}
 
 /* Extra large devices (large desktops)
 No media query since the extra-large breakpoint has no upper bound on its width */
