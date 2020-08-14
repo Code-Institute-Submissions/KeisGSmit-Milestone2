@@ -61,9 +61,9 @@ function resetBoard() {
   secondCard = null;
 }
 
-(function shuffle(){
-    $(".cards").forEach(_card => {
-    let positionShuffle = Math.floor(Math.random()* 18); 
-    $('.card').style.order = positionShuffle; 
-    });
+(function shuffle() {
+  $(".card").each(function () {
+    let positionShuffle = Math.floor(Math.random() * 18);
+    $(this).style.order = positionShuffle;
+  });
 })();
