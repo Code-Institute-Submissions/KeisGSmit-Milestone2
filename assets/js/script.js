@@ -61,9 +61,11 @@ function resetBoard() {
   secondCard = null;
 }
 
+
+//As soon as the page loads the divs ith the class card are given a random number between 0 and 18 and then ordered - This is the shuffle function
 (function shuffle() {
   $(".card").each(function () {
     let positionShuffle = Math.floor(Math.random() * 18);
-    $(this).style.order = positionShuffle;
+    this.style.order = positionShuffle;
   });
 })();
