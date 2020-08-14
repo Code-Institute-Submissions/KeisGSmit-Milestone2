@@ -21,6 +21,7 @@ body{
 }
 .card{
     border: 2px solid #ff0000;
+    background: none;
     width: 15%;
     height: 30%;
     position: relative;
