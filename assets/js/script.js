@@ -30,6 +30,7 @@ function matchCheck() {
   if (firstCard.dataset.match === secondCard.dataset.match) {
     // then we need to turn off the click event listener for the first card and the second card
     cardDisable();
+    // NEEDS TO PLAY A SOUND LIKE 'TING.WAV'
   } else {
     //if the cards do not match the cards get flipped back over this has to happen in a certain time period
     unflip();
