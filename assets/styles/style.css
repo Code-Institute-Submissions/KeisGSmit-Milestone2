@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-size: 16px;
 }
 
 body {
@@ -22,8 +23,8 @@ body {
 .card {
   border: 2px solid #ff0000;
   background: none;
-  width: 15%;
-  height: 30%;
+  width: 10rem;
+  height: 0.3rem;
   position: relative;
   transform: scale(1);
   transform-style: preserve-3d;
@@ -33,8 +34,8 @@ body {
   transform: rotateY(180deg);
 }
 img {
-  height: 100%;
-  width: auto;
+  height: auto;
+  width: 100%;
   position: relative;
   border-radius: 7%;
 }
@@ -56,25 +57,46 @@ img:hover {
 
 /* bOOTSTRAP CUSTOM UPPERBOUND BREAK POINTS FOR RESPONSIVE DESIGN */
 
-/* Extra small devices (portrait phones, less than 576px) */
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap */
+
 @media (max-width: 575.98px) {
-  ...;
+  .card {
+    height: 0.3rem;
+    width: 4.7rem;
+  }
 }
 
-/* Small devices (landscape phones, less than 768px) */
-@media (max-width: 767.98px) {
-  ...;
+/* // Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .card {
+    height: 0.3rem;
+    width: 4.5rem;
+  }
 }
 
-/* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {
-  ...;
+/* // Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .card {
+    height: 0.3rem;
+    width: 6rem;
+  }
 }
 
-/* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {
-  ...;
+/* // Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .card {
+    border: 2px solid #ff0000;
+    background: none;
+    width: 10rem;
+    height: 0.3rem;
+    position: relative;
+    transform: scale(1);
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+  }
 }
 
-/* Extra large devices (large desktops)
-No media query since the extra-large breakpoint has no upper bound on its width */
+/* // Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
