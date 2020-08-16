@@ -57,12 +57,11 @@ img:hover {
 
 /* bOOTSTRAP CUSTOM UPPERBOUND BREAK POINTS FOR RESPONSIVE DESIGN */
 
-/* // Extra small devices (portrait phones, less than 576px)
-// No media query for `xs` since this is the default in Bootstrap */
+/* // Extra small devices (portrait phones, less than 576px) */
 
 @media (max-width: 575.98px) {
   .card {
-    height: 0.3rem;
+    height: auto;
     width: 4.7rem;
   }
 }
@@ -70,7 +69,7 @@ img:hover {
 /* // Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
   .card {
-    height: 0.3rem;
+    height: auto;
     width: 4.5rem;
   }
 }
@@ -78,7 +77,7 @@ img:hover {
 /* // Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .card {
-    height: 0.3rem;
+    height: auto;
     width: 6rem;
   }
 }
@@ -86,16 +85,10 @@ img:hover {
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .card {
-    border: 2px solid #ff0000;
-    background: none;
     width: 10rem;
     height: 0.3rem;
-    position: relative;
-    transform: scale(1);
-    transform-style: preserve-3d;
-    transition: transform 0.5s;
-  }
 }
+} 
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
