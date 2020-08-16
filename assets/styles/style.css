@@ -93,6 +93,48 @@ img:hover {
     width: 47%;
   }
 }
+@media (min-width: 568px) {
+  #board {
+    height: 6rem;
+    width: 45%;
+  }
+}
+@media (min-width: 639px) {
+  #board {
+    height: 7rem;
+    width: 75%;
+  }
+}
+@media (min-width: 653px) {
+  #board {
+    height: 5rem;
+    width: 75%;
+  }
+}
+@media (min-width: 667px) {
+  #board {
+    height: 5rem;
+    width: 100vw;
+  }
+}
+@media (min-width: 731px) {
+  #board {
+    height: 5rem;
+    width: 100vw;
+  }
+}
+@media (min-width: 812px) {
+  #board {
+    height: 7rem;
+    width: 75%;
+  }
+}
+@media (min-width: 823px) {
+  #board {
+    height: 8rem;
+    width: 75%;
+  }
+}
 /* bOOTSTRAP CUSTOM UPPERBOUND BREAK POINTS FOR RESPONSIVE DESIGN */
 
 /* // Extra small devices (portrait phones, less than 576px) */
@@ -110,10 +152,6 @@ img:hover {
     height: auto;
     width: 4.5rem;
   }
-  #board {
-    height: 11rem;
-    width: 44%;
-  }
 }
 
 /* // Medium devices (tablets, 768px and up) */
@@ -121,10 +159,6 @@ img:hover {
   .card {
     height: auto;
     width: 6rem;
-  }
-  #board {
-    height: 13rem;
-    width: 48%;
   }
 }
 
