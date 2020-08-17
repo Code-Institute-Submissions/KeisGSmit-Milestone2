@@ -57,16 +57,16 @@ img:hover {
 #board {
   border: 2px solid #25d8db;
 }
-/* Breakpoints set for the #board on mobile devices in chrome developer tools*/
-
 /* bOOTSTRAP CUSTOM UPPERBOUND BREAK POINTS FOR RESPONSIVE DESIGN */
 
 /* // Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 280px) {
 
+}
 @media (max-width: 575.98px) {
   .card {
     height: auto;
-    width: 4.7rem;
+    width: 4rem;
   }
 }
 
@@ -74,7 +74,7 @@ img:hover {
 @media (min-width: 576px) {
   .card {
     height: auto;
-    width: 4.5rem;
+    width: 4rem;
   }
 }
 
@@ -82,22 +82,19 @@ img:hover {
 @media (min-width: 768px) {
   .card {
     height: auto;
-    width: 6rem;
+    width: 5.5rem;
   }
 }
 
 /* // Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .card {
-    width: 10rem;
+    width: 9rem;
     height: 0.3rem;
   }
 }
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  #board {
-    height: 13rem;
-    width: 48%;
-  }
+
 }
