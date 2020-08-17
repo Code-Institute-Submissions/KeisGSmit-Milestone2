@@ -56,85 +56,9 @@ img:hover {
 }
 #board {
   border: 2px solid #25d8db;
-  position: fixed;
-  bottom: 0;
-  right: 0;
-  height: 8rem;
-  width: 55%;
 }
 /* Breakpoints set for the #board on mobile devices in chrome developer tools*/
-@media (min-width: 280px) {
-  #board {
-    height: 100vh;
-    width: 18%;
-  }
-}
-@media (min-width: 320px) {
-  #board {
-    height: 7rem;
-    width: 50%;
-  }
-}
-@media (min-width: 361px) {
-  #board {
-    height: 8rem;
-    width: 49%;
-  }
-}
-@media (min-width: 411px) {
-  #board {
-    height: 13rem;
-    width: 43%;
-  }
-}
-@media (min-width: 450px) {
-  #board {
-    height: 9rem;
-    width: 47%;
-  }
-}
-@media (min-width: 568px) {
-  #board {
-    height: 6rem;
-    width: 45%;
-  }
-}
-@media (min-width: 639px) {
-  #board {
-    height: 7rem;
-    width: 75%;
-  }
-}
-@media (min-width: 653px) {
-  #board {
-    height: 5rem;
-    width: 75%;
-  }
-}
-@media (min-width: 667px) {
-  #board {
-    height: 5rem;
-    width: 100vw;
-  }
-}
-@media (min-width: 731px) {
-  #board {
-    height: 5rem;
-    width: 100vw;
-  }
-}
-@media (min-width: 812px) {
-  #board {
-    height: 7rem;
-    width: 75%;
-  }
-}
-@media (min-width: 823px) {
-  #board {
-    height: 8rem;
-    width: 75%;
-  }
-}
+
 /* bOOTSTRAP CUSTOM UPPERBOUND BREAK POINTS FOR RESPONSIVE DESIGN */
 
 /* // Extra small devices (portrait phones, less than 576px) */
