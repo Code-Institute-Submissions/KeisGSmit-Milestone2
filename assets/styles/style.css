@@ -13,7 +13,6 @@ body {
 
 .board {
   display: flex;
-  border: 5px solid #ff0000;
   height: 100vh;
   width: 100vw;
   flex-wrap: wrap;
@@ -21,7 +20,6 @@ body {
   perspective: 1000px;
 }
 .card {
-  border: 2px solid #ff0000;
   background: none;
   width: 10rem;
   height: 0.3rem;
@@ -54,17 +52,13 @@ img:hover {
   position: absolute;
   backface-visibility: hidden;
 }
-#board {
-  border: 2px solid #25d8db;
-}
-p{
+p {
   color: aliceblue;
 }
 /* bOOTSTRAP CUSTOM UPPERBOUND BREAK POINTS FOR RESPONSIVE DESIGN */
 
 /* // Extra small devices (portrait phones, less than 576px) */
 @media (max-width: 280px) {
-
 }
 @media (max-width: 575.98px) {
   .card {
@@ -99,5 +93,4 @@ p{
 
 /* // Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-
 }
