@@ -57,6 +57,9 @@ img:hover {
 #board {
   border: 2px solid #25d8db;
 }
+p{
+  color: aliceblue;
+}
 /* bOOTSTRAP CUSTOM UPPERBOUND BREAK POINTS FOR RESPONSIVE DESIGN */
 
 /* // Extra small devices (portrait phones, less than 576px) */
