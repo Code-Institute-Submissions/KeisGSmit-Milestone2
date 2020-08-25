@@ -1,11 +1,10 @@
-//three actions can be taken; the card can be flipped, we pick 2 cards - thus we have 3 variables
+/**three actions can be taken; the card can be flipped and we pick 2 cards (they can vary) - thus we have 3 variables**/
 let cardFlipped = false;
-let firstCard, secondCard; // these 2 variables can vary because it depends on what card you click on, thus they are not declared
+let firstCard, secondCard; 
 
 let lock = false; // this variable is created to lock the board so that when a user spam clicks, no false matches are made
 
-//When I click on a card I want it to run a function
-var game = $(".card").click(function () {
+$(".card").click(function () {
   if (lock) return;// this has been created to prevent matches with a  double click
 
   if (this === firstCard) return; 
@@ -68,7 +67,7 @@ function resetBoard() {
 }
 
 
-//As soon as the page loads the divs ith the class card are given a random number between 0 and 18 and then ordered - This is the shuffle function
+/**As soon as the page loads the divs with the class "card" are given a random number between 0 and 18 and then ordered */
 (function shuffle() {
   $(".card").each(function () {
     let positionShuffle = Math.floor(Math.random() * 18);
@@ -83,3 +82,20 @@ function points() {
   moves += 1;
   document.getElementById("score").innerHTML = moves;
 };
+/** Now we want to incorporate a high score system
+ * when the new game button is clicked, 
+ * the score value has to be saved by puttin it in a array 
+ * if the score is < 8 it will not be saved - to prevent 0 being a highscore and incomplete games being counted towards high scores
+ * the array has to be ordered in a decreasing order:
+ * [small number.....big number]
+ * the first 10 items need to be put in individual <li>tags</li> 
+ * and be put into <ol id="HighScores"></ol>
+ * 
+ * const length = array.length < 10 ? array.length : 10;
+let length = array.length;
+if (length > 10) {
+    length = 10;
+}
+
+local storage
+*/
