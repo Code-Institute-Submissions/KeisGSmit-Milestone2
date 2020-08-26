@@ -32,8 +32,23 @@ In addition, you may also use this section to discuss plans for additional featu
 
 In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
 
+### Tools 
+
+
+- [Autoprefixer](https://autoprefixer.github.io/)
+- [Markup Validation service](https://validator.w3.org/) 
+- [GitHub](https://github.com/)
+- [Git](https://git-scm.com/)
+- [Gitpod](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki?hl=en)
+- [VSC](https://code.visualstudio.com/download) 
+- [favicon](https://www.favicon.cc/) and a [tutorial](https://tutorialehtml.com/en/what-is-favicon-ico-usage/)  
+
+### Frameworks
+
+- [Bootstrap](https://getbootstrap.com/)
+
+### libraries
 - [JQuery](https://jquery.com)
-    - The project uses **JQuery** to simplify DOM manipulation.
 
 
 ## Testing
