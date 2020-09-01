@@ -1,63 +1,56 @@
-//three actions can be taken; the card can be flipped, we pick 2 cards - thus we have 3 variables
 let cardFlipped = false;
-let firstCard, secondCard; // these 2 variables can vary because it depends on what card you click on, thus they are not declared
-let lock = false; // this variable is created to lock the board so that when a user spam clicks, no false matches are made
+let firstCard, secondCard; 
+/** this variable is created to lock the board so that when a user spam clicks, no false matches are made*/ 
+let lock = false; 
 
-//When I click on a card I want it to run a function
 $(".card").click(function () {
-  if (lock) return;// this has been created to prevent matches with a  double click
-
+/**this has been created to prevent matches with a  double click*/  
+    if (lock) return;
+/**add the 'flip' class to the firstCard clicked*/
   if (this === firstCard) return; 
-  // the card must first be flipped
-  this.classList.add("flip");
+  this.classList.add("flip"); 
 
+/**On first click, a card is flipped */ 
   if (!cardFlipped) {
-    // On first click, a card is flipped and the first card is the card we are currently on
     cardFlipped = true;
     firstCard = this;
   } else {
-    //on the second click, a card is flipped and the second card is the card we are currently on
+/**on the second click, a different card is flipped*/
     secondCard = this;
-    // this function was created so that a score can be held of how the player is progressing through the game
+/**the score will increase by 1 and a match will be checked */
     points();
     matchCheck();
-    
   }
 });
 
+/**matchCheck checks if the data-match attribute of the 2 cards are the same */
 function matchCheck() {
-  //We need to check if the cards match
   if (firstCard.dataset.match === secondCard.dataset.match) {
-    // then we need to turn off the click event listener for the first card and the second card
 
+/**This function has been created to prevent cards from being unflipped while other cards are being shown*/
     cardDisable();
   } else {
-    //if the cards do not match the cards get flipped back over this has to happen in a certain time period
-    
+/**This function was created to unflip the cards if there has been a flase match*/
     unflip();
   }
 }
 
-//This function has been created to to prevent cards from being unflipped whiled other cards are being shown
 function cardDisable() {
   $(firstCard).off("click");
   $(secondCard).off("click");
-
   resetBoard();
 }
 
-//This function was created to unflip the cards if there has been a flase match
 function unflip() {
   lock = true;
-
+/**This was to lock the board so that no cards can be flipped while other cards are exposed to the user*/
   setTimeout(() => {
     firstCard.classList.remove("flip");
     secondCard.classList.remove("flip");
-
     resetBoard();
   }, 1500);
 }
-//This was to lock the board so that no cards can be flipped while other cards are exposed to the user
+/**cards wont be able to be clicked on and won't rotate */
 function resetBoard() {
   cardFlipped = false;
   lock = false;
@@ -66,7 +59,7 @@ function resetBoard() {
 }
 
 
-//As soon as the page loads the divs ith the class card are given a random number between 0 and 18 and then ordered - This is the shuffle function
+/**As soon as the page loads the divs with the class "card" are given a random number between 0 and 18 and then ordered */
 (function shuffle() {
   $(".card").each(function () {
     let positionShuffle = Math.floor(Math.random() * 18);
@@ -74,7 +67,8 @@ function resetBoard() {
   });
 })();
 
-//This is the function which will increase the score of the player as they play the game 
+
+/**this function was created so that a score can be held of how the player is progressing through the game */ 
 var moves = 0;
 
 function points() {

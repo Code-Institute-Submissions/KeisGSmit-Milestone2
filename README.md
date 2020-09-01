@@ -39,7 +39,6 @@ In this section, I mention all of the languages, frameworks, libraries, and any 
 - [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Tools 
-
 - [Autoprefixer](https://autoprefixer.github.io/)
 - [Markup Validation service](https://validator.w3.org/) 
 - [GitHub](https://github.com/)

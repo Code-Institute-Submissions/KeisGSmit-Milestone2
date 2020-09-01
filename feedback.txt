@@ -1,23 +1,10 @@
-- add score card
-- add refresh button
 - level? future features 
     - expansions
     - cards
     - alternate heroes 
     - etc
-- images must be within divs 
-    - overlap/overflow: none; 
 
-- for laptop/pc 
-    - cards must be a bit bigger to fill screen
-    - 
-- on phone/tablet
-    - if page is portrait 
-        - error message: 'rotate phone'
-            - successful: game can play
-    - if page is landscape
-        - successful: game can play
- - feedback from dick:
+- feedback from dick:
     - put scores in array 
     - order array 
             - length or 10 
