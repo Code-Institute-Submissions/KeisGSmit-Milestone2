@@ -46,7 +46,7 @@ In this section, I mention all of the languages, frameworks, libraries, and any 
 - [Gitpod](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki?hl=en)
 - [VSC](https://code.visualstudio.com/download) 
 - [Microsoft Office](https://www.office.com/)
-- [favicon](https://www.favicon.cc/) and a [tutorial](https://tutorialehtml.com/en/what-is-favicon-ico-usage/)  
+- [favicon](https://www.favicon.cc/)
 
 ### Frameworks
 
