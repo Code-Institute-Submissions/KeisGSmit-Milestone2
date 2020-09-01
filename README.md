@@ -48,6 +48,20 @@ The users are expecting to play a game when the site is loaded. The user doesn�
 
 Now I will have to look at the trade-off. Our total importance is 32, our average viability is 4.29 (2 dp). Multiplying our average viability by the number of items, we get 30. Our importance is greater than our viability, thus not all features can be implemented. We will have to scrap a few/one feature. In this case, I believe it should be the high score as mentioned above, in the existing product audit. 
 
+### Scope plane trade offs 
+
+Looking at what offers are open for discussion; it looks like we need to get rid of a feature to make the project more feasible.  This has already been spoken about and some reasoning has been given but here I would like to discuss why other features have not been removed
+
+The first feature is that “Cards must flip (animation)”. This is essential as it provides a visual stimulus to the user. This is to pull their attention and make the game seem more “realistic”, even though it is a virtual game. If you flipped over a card in real life you would not expect it to instantly flash its other side immediately. This feature also supports the “game mechanics” feature which is essential as it is rated 5/5 on both importance and viability. 
+
+Next looking at the hover animation, this is seen as an essential. This is a feature pulled from hearthstone, making it a key part of the theme. In hearthstone, when a user wants to expand their card collection, they need to open “packs”, these contain 5 cards. Common cards are silver, rare cards are blue, epic cards are purple and legendary cards are gold/yellow. Having a hover function that gives a box shadow that is the “same” shade as a legendary is to emphasise more on the hearthstone theme of this memory game. See image bellow. 
+
+![hover feature](assets/images/UXMS2cardHover.png)
+
+Being able to perfectly execute the game mechanics is a must. This feature is the most important part of the project. This is the core of the project, if this fails then the project fails, thus this cannot be replaced. 
+
+Players (users) would want this project to run as fluidly as possible, thus responsive design (image sizes and display) are just as important as the game mechanics. The user doesn’t want to (knowingly) refresh the page, but if our new game button does it for the user without them knowing then it adds to a positive user experience because a new game will start and the cards will be shuffled.  
+
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
 In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
