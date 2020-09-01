@@ -6,7 +6,6 @@ let lock = false;
 $(".card").click(function () {
 /**this has been created to prevent matches with a  double click*/  
     if (lock) return;
-
 /**add the 'flip' class to the firstCard clicked*/
   if (this === firstCard) return; 
   this.classList.add("flip"); 

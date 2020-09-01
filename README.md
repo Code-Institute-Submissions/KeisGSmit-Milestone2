@@ -30,17 +30,22 @@ In addition, you may also use this section to discuss plans for additional featu
 
 ## Technologies Used
 
-In this section, you should mention all of the languages, frameworks, libraries, and any other tools that you have used to construct this project. For each, provide its name, a link to its official site and a short sentence of why it was used.
+In this section, I mention all of the languages, frameworks, libraries, and any other tools that I have used to construct this project.
+
+### Lanuages 
+
+- [HTML](https://en.wikipedia.org/wiki/HTML5)
+- [CSS](https://en.wikipedia.org/wiki/Cascading_Style_Sheets#CSS_3)
+- [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
 ### Tools 
-
-
 - [Autoprefixer](https://autoprefixer.github.io/)
 - [Markup Validation service](https://validator.w3.org/) 
 - [GitHub](https://github.com/)
 - [Git](https://git-scm.com/)
 - [Gitpod](https://chrome.google.com/webstore/detail/gitpod-online-ide/dodmmooeoklaejobgleioelladacbeki?hl=en)
 - [VSC](https://code.visualstudio.com/download) 
+- [Microsoft Office](https://www.office.com/)
 - [favicon](https://www.favicon.cc/) and a [tutorial](https://tutorialehtml.com/en/what-is-favicon-ico-usage/)  
 
 ### Frameworks
@@ -54,14 +59,55 @@ In this section, you should mention all of the languages, frameworks, libraries,
 ## Testing
 
 During various branches, which have been merged to the final 
-materbranch, I have tested the game on 2 twin teenagers (16). 
-They have supplied feedback (responsive branch file name: feedback.txt).
-Their responses have been recorded in that file and some of their input was implemented.
+materbranch, I have tested the game on twin teenagers (16). 
+They have supplied feedback wich has been taken care of as some of their input was implemented. These have 
+been documented in this section. 
 
+Initially we tried to implement testing via [jasmine](https://jasmine.github.io/) but that was not possible since I had to parce
+values into a function to test it,which was not possible for the code I had written. This means that I had to 
+resort to physical testing. 
 
-In this section, you need to convince the assessor 
-that you have conducted enough testing to legitimately 
-believe that the site works well. Essentially, in this 
+- Test 1: Animating the  cards to flip 
+    - Some time was spent on [researching the 3d persepctive css property](https://3dtransforms.desandro.com/perspective).
+    - Then some time was spent on [how to flip cards using css](https://www.w3schools.com/howto/howto_css_flip_card.asp).
+    - mutiple  attempts was made to flip cards on click (via a css class "flip"), and then the successful version was commited.
+    - Cards now successfully flip with no bugs.
+
+- Test 2: Matching the cards
+    - We needed to make sure the cards match and to do this I researched the [data match attribute](https://www.w3schools.com/tags/att_data-.asp).
+    - we then used the "data-match" attribute with a assigned value that will be compared in script.js.
+    - cards will be given the class of "flip" and then the code will run
+    - the "data-match"values will be compared and if they match the cards will not be able to flip back; for this we turned off their click fucntions and assigned different value to their variables.
+    - If the "data-match" values do not match, the cards will be unflipped by removing the "flip class"
+    - Some bugs were discovered at this Stage
+
+- Test 3: Bug 1; Speed runs
+    - If a user was to quickly click through the matches, more than 2 cards would be revealed
+    - I created a setTimeout() function and a lock variable.
+    - The setTimout functions displays the faces of the cards for a certain period of time before the cards are unflipped (the "flip" class was removed)
+    - In the mean time while the card's faces were shown the board would be locked (lock variable).
+    - Bug was successfully removed, a user can no longer click through the cards at random speeds. 
+
+- Test 4: Bug 2; Single card matching with itself
+    - When double clicking on a card a match would happen
+    - To prevent this the cardFlipped variable was created.
+    - If the card was already flipped the function which would run the match check would not be activated
+    - Bug was successfully removed, no double click matches would happen
+
+- Test 5: Cards shuffle every new game
+    - I created a self invoking function that assignes a random number between 1-18 to each card
+    - Then the cards are sorted in the order the random number is assigned to them.
+    - This happens each time the page loads
+    - Each time the page is loaded this function happens successfully.
+
+- Test 6: Creating a new game
+    - Due to the code invoked for the bugs, starting a new game without refreshing the page is a strenuous task
+    - This resulted in the "new game" button becoming a page refresh button
+    - This also prevented the "high score" feature to be implemented 
+        - if a highscore feature was implemented then it would push the score value into an array, sort the array and then take the first 10 values and put them into an `<ol>` as `<li>` items. This would be on the local storage. 
+    - page now refreshes and the game is reset properly but the highscore feature has to be removed.
+
+Essentially, in this 
 part you will want to go over all of your user stories 
 from the UX section and ensure that they all work as intended, 
 with the project providing an easy and straightforward way for 
