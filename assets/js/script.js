@@ -76,31 +76,3 @@ function points() {
   moves += 1;
   document.getElementById("score").innerHTML = moves;
 };
-
-/** These functions are used to init a new game */
-function initNewGame(){
-    // setup game vars and cards
-let cardFlipped = false;
-let firstCard, secondCard = [undefined,undefined]; 
-let lock = false; 
-var moves = 0;
-document.getElementById("score").innerHTML = moves;
-}
-
-function endGame(){
-    // clean game vars and remove cards
-$('.board > div').removeClass("flip");
-$(firstCard).on("click");
-$(secondCard).on("click");
-(function shuffle() {
-  $(".card").each(function () {
-    let positionShuffle = Math.floor(Math.random() * 18);
-    this.style.order = positionShuffle;
-  });
-})();
-}
-
-function newOrReset(){
-    endGame();
-    initNewGame();
-};
