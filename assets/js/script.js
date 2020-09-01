@@ -1,11 +1,10 @@
 //three actions can be taken; the card can be flipped, we pick 2 cards - thus we have 3 variables
 let cardFlipped = false;
 let firstCard, secondCard; // these 2 variables can vary because it depends on what card you click on, thus they are not declared
-
 let lock = false; // this variable is created to lock the board so that when a user spam clicks, no false matches are made
 
 //When I click on a card I want it to run a function
-var game = $(".card").click(function () {
+$(".card").click(function () {
   if (lock) return;// this has been created to prevent matches with a  double click
 
   if (this === firstCard) return; 
@@ -32,7 +31,6 @@ function matchCheck() {
     // then we need to turn off the click event listener for the first card and the second card
 
     cardDisable();
-    // NEEDS TO PLAY A SOUND LIKE 'TING.WAV'
   } else {
     //if the cards do not match the cards get flipped back over this has to happen in a certain time period
     
