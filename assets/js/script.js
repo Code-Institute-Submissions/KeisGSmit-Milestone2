@@ -27,7 +27,14 @@ $(".card").click(function () {
 });
 
 /**
- * matchCheck checks if the data-match attribute of the 2 cards are the same.
+ * points holds a score of how the player is progressing through the game
+ */
+function points() {
+  moves += 1;
+  document.getElementById("score").innerHTML = moves;
+}
+
+/**
  * if the firstCard and the secondCard match then the cards are disabled and can not be flipped over.
  * if the firstCard and the secondCard do not match then the cards are unfliped.
  */
@@ -37,20 +44,24 @@ function matchCheck() {
   } else {
     unflip();
   }
-}
+};
 
 /**
- * cardDisable has been created to disabling their click function.
+ * cardDisable has been created to disable the 'cards' of being clicked so that they can not be flipped once they match.
  */
 function cardDisable() {
   $(firstCard).off("click");
   $(secondCard).off("click");
   resetBoard();
-}
+};
 
-/**
- * This function was created to unflip the cards if there has been a flase match
- */
+function resetBoard() {
+  cardFlipped = false;
+  lock = false;
+  firstCard = null;
+  secondCard = null;
+};
+
 function unflip() {
   //This was to lock the board so that no cards can be flipped while other cards are exposed to the user
   lock = true;
@@ -60,15 +71,6 @@ function unflip() {
     secondCard.classList.remove("flip");
     resetBoard();
   }, 1500);
-}
-/**
- * resetBoard resets the variables to default
- */
-function resetBoard() {
-  cardFlipped = false;
-  lock = false;
-  firstCard = null;
-  secondCard = null;
 }
 
 /**
@@ -80,11 +82,3 @@ function resetBoard() {
     this.style.order = positionShuffle;
   });
 })();
-
-/**
- * this function was created so that a score can be held of how the player is progressing through the game
- */
-function points() {
-  moves += 1;
-  document.getElementById("score").innerHTML = moves;
-}
