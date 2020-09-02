@@ -13,9 +13,9 @@ Table of contents
 
 
 ------------
-## UX
+## UX 
 
-### High level considerations
+### High level considerations [back to top](#Hearthstone-Memory-Game)
 
 Content on the site is culturally appropriate. The site only contains a game and a refresh button with a score, there is no malicious content. The target audience is mostly for children and teenagers looking to develop their attention and concentration. The theme of the game is based off “Hearthstone”, a strategy game owned by Blizzard. This means that the game and its theme are directed at cognitive development. “Hearthstone” does contain the same amount of violence as chess. This memory game contains no violence what so ever to make sure the site does not trigger the debate “do video games make children more violent”.  
 
