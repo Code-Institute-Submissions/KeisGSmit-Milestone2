@@ -6,9 +6,21 @@ This is "Hearthstone Memory". This is to be played in the exact same way as the 
 Table of contents
 
 <!--ts-->
-   * [UX](#UX)
-      * [High level considerations](#High-level-considerations)
-   
+* [UX](#UX)
+    * [High level considerations](#High-level-considerations)
+    * [Busniness goals](#Business-goals)
+    * [B2B vs B2C](#B2B-vs-B2C)
+    * [Strategy Trade-offs](#Strategy-Trade-offs)
+    * [Scope plane trade offs](#Scope-plane-trade-offs)
+    * [Scope plane requirements](#Scop-plane-requirements)
+    * [Scope Plane Requirement types](#Scope-Plane-Requirement-types)
+    * [The structure Plane concerns](#The-structure-Plane-concerns)
+    * [Interaction design](#Interaction-design)
+* [Features](#Features)
+* [Technologies Used](#Technologies-Used)
+* [Testing](#Testing)
+* [Deployment](#Deployment)
+* [Credits](#Credits)_
 <!--te-->
 
 
@@ -27,7 +39,7 @@ The current medium for a memory game is a physical version which, according to �
 
 I used the most modern versions of HTML (HTML5), CSS (CSS3) and JavaScript to develop this game. I ran the code through “AutoPrefixer” to make it more “available” for any browser a user chooses to use to access the site. 
 
-### Business goals 
+### Business goals [back to top](#Hearthstone-Memory-Game)
 
 This project is unique in the sense of its theme. The memory game itself is not unique as there are hundreds of different versions available. What differentiate other versions of the game are their themes. This would mean that this “Hearthstone memory” is unique in its own way, disregarding the fact that it is online, which is another unique feature.
 
@@ -45,11 +57,11 @@ This is a very minimalistic website, thus there is not a lot of features to add.
 
 Doing an existing product audit, I can see there are some improvements to be made. I would like the “new game” button to not just refresh the page, but to actually flip the cards over, shuffle them and allow users to click on them again. The issue arises with some bugs; there was a bug where users were able to double click on one card and the code would determine that there was a match. To hinder this, a “board lock” feature has been incorporated (see comments on assets/js/script.js) but this means that cards were not able to be clicked (“flipped over”) on the second round even after variables and cards were cleared for a new game. The second improvement I would like to make is to incorporate a high score. This would have been possible but first the “new game” button had to be fixed first so that the score can be pushed into an array, the array be sorted in an ascending order, and then the top 10 scores would be shown. If the score was lower than 8, it would not be counted as this would mean that a game was incomplete as there are 9 pairs of cards. This has been discussed with my mentor but due to a lack of viability this was not incorporated. Apart from those 2 failed features, I believe the coding for the bug fixes, the animation, the display of images and the game mechanics was well executed and I am proud with what I have done. I am aware that it is not the best memory game out on the market but it was my best effort. 
 
-### B2B vs B2C
+### B2B vs B2C [back to top](#Hearthstone-Memory-Game)
 
 As this is an educational piece of work with no form of monetization to prevent a copyright violation, this section will be minimal as monetizing this, is unethical and unlawful. There will be no online purchases; the emotional transactions will be simple and basic, with no branding, minimal content with large images. If anything is to be said about this product in this section, it should be considered as a B2C product. 
 
-### Strategy Trade-offs 
+### Strategy Trade-offs [back to top](#Hearthstone-Memory-Game)
 ![UX images](assets/images/UXMS2.png)
 
 Looking at what values I provide to set me apart from competitors is that I need to start by looking at the target audience. My target audience is children and teenagers. They are in the stages of brain development, thus minimal distractions need to be present. They also need to be accommodated on any device they are using. They might be advised by a guardian (teacher/parent) to play the game or do it out of free will. The final product needs to have a “gaming” feel to it, to distract them from the core purpose of the site; like taking medicine, if it tastes good then you will be more compelled to take it rather than hating it. 
@@ -58,7 +70,7 @@ The users are expecting to play a game when the site is loaded. The user doesn�
 
 Now I will have to look at the trade-off. Our total importance is 32, our average viability is 4.29 (2 dp). Multiplying our average viability by the number of items, we get 30. Our importance is greater than our viability, thus not all features can be implemented. We will have to scrap a few/one feature. In this case, I believe it should be the high score as mentioned above, in the existing product audit. 
 
-### Scope plane trade offs 
+### Scope plane trade offs [back to top](#Hearthstone-Memory-Game)
 
 Looking at what offers are open for discussion; it looks like we need to get rid of a feature to make the project more feasible.  This has already been spoken about and some reasoning has been given but here I would like to discuss why other features have not been removed. 
 
@@ -72,18 +84,18 @@ Being able to perfectly execute the game mechanics is a must. This feature is th
 
 Players (users) would want this project to run as fluidly as possible, thus responsive design (image sizes and display) are just as important as the game mechanics. The user doesn’t want to (knowingly) refresh the page, but if our new game button does it for the user without them knowing then it adds to a positive user experience because a new game will start and the cards will be shuffled.  
 
-### Scope plane requirements
+### Scope plane requirements [back to top](#Hearthstone-Memory-Game)
 
 Looking at my scope plane requirements, I will have to examine the requirements and functional specification regarding; “what users say they need” and “what users actually need”. 
 
 Firstly looking at what users say they need, this is what the requirements for the project are. The users will need a memory game that is fully functional and needs to be unique. I completely agree. What Users say they need is the same as what they actually need, in this case, but due to constraints in the project the high score feature will have to be removed. There is only 1 way to play the memory game and where you start, doesn’t matter, the end will still be the same. 
 
-### Scope Plane Requirement types
+### Scope Plane Requirement types [back to top](#Hearthstone-Memory-Game)
 Examining the content requirements elaborates more on the theme of the memory game. There will not be a lot of mixed media on this page. We will just have a number of pairs of images from hearthstone heroes. Their non-functional requirements are negligible. I do have the viability to produce the desired content; all I need to do is research the media and get the media into my repository to be able to use it. The content requirements mainly focus on the game mechanics in such a way that the final product is viable.  
 
 Looking at the requirement types of this project we have to see if this project is; useful, sellable, buildable, objective, functional and what is non-functional. This project is useful for me as it contributes to my MS2 grade and to users looking to develop their cognitive ability. This project is not sellable as it contains media from my already owned game that is played by millions and can result in a copyright infringement. This project is buildable in the sense that it can meet the client’s requirements but it will not look the exact same since features have to be removed.  The users want a completed game that works to develop their cognitive ability, and that has been provided. The loss of one feature does not impact the project in a large degree and the lost feature can be considered negligible in the first place. The game is fully functional, the game mechanics work, cards do not match with themselves and trying to break the game is not possible. The only non-functional aspect of the game is the scalability. We will need a better hosting platform to be able to handle a larger traffic. 
 
-### The structure Plane concerns 
+### The structure Plane concerns [back to top](#Hearthstone-Memory-Game)
 
 The organisation of the content will be simple. There will be a “board” that will contain the “cards”. As the screen sizes vary, the board will take the same percentage of space but the cards will resize to fill the board as much as possible. The exact layout of the cards will not be the same on all devices due to their varying screen sizes and my attempt to make all the cards fit on the board without the user having to scroll. What is the point in playing a game that requires a user to scroll? There is no point, it ruins the user experience. 
 
@@ -91,7 +103,7 @@ There is no navigation on the game page; this is to prevent games from being int
 
 The site will just have a linear narrative where everything is just on one page. It is logical and straightforward for a game. 
 
-### Interaction design 
+### Interaction design [back to top](#Hearthstone-Memory-Game)
 
 The layout of the page will be ± 80% “board” where cards will be displayed in, then the remaining 20% will be for the “new game” button and the score. When a user hovers over a card a box shadow will appear in the same shade as a legendary card in hearthstone. When a user clicks on a card, the card should flip around displaying a hero of hearthstone. The user then has to click on another card to see if the second card matches the first card. The cards will be on display for a few seconds before they flip around, if they do not match. If the cards do match, then the cards will be displayed constantly until a new game is started. The cards will not be able to be flipped over if they already match with another card. The game ends when all matching pairs have been found, or the user gives up and clicks “new game”. 
 
@@ -116,11 +128,11 @@ In particular, as part of this section we recommend that you provide a list of U
 
 This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
 
-## Features
+## Features [back to top](#Hearthstone-Memory-Game)
 
 In this section, you should go over the different parts of your project, and describe each in a sentence or so.
  
-### Existing Features
+### Existing Features 
 - Feature 1 - allows users X to achieve Y, by having them fill out Z
 - ...
 
@@ -128,10 +140,10 @@ For some/all of your features, you may choose to reference the specific project 
 
 In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
 
-### Features Left to Implement
+### Features Left to Implement 
 - Another feature idea
 
-## Technologies Used
+## Technologies Used [back to top](#Hearthstone-Memory-Game)
 
 In this section, I mention all of the languages, frameworks, libraries, and any other tools that I have used to construct this project.
 
@@ -160,7 +172,7 @@ In this section, I mention all of the languages, frameworks, libraries, and any 
 - [JQuery](https://jquery.com)
 
 
-## Testing
+## Testing [back to top](#Hearthstone-Memory-Game)
 
 During various branches, which have been merged to the final 
 materbranch, I have tested the game on twin teenagers (16). 
@@ -224,7 +236,7 @@ You should also mention in this section any interesting bugs or problems you dis
 
 If this section grows too long, you may want to split it off into a separate file and link to it from here.
 
-## Deployment
+## Deployment [back to top](#Hearthstone-Memory-Game)
 
 This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
 
@@ -236,12 +248,12 @@ In particular, you should provide all details of the differences between the dep
 In addition, if it is not obvious, you should also describe how to run your code locally.
 
 
-## Credits
+## Credits [back to top](#Hearthstone-Memory-Game)
 
-### Content
+### Content 
 - The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
 
-### Media
+### Media 
 - The card back was optained from [engadget](https://www.engadget.com/2014-02-26-new-hearthstone-card-backs-revealed.html)
 - The card front for Jaina Proudmoore was optained from [HearthstoneWiki](https://hearthstone.gamepedia.com/Jaina_Proudmoore)
 - The card front for Rexxar was optained from [HearthstoneWiki](https://hearthstone.gamepedia.com/Rexxar)
