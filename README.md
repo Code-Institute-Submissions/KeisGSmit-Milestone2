@@ -81,6 +81,23 @@ There is no navigation on the game page; this is to prevent games from being int
 
 The site will just have a linear narrative where everything is just on one page. It is logical and straightforward for a game. 
 
+### Interaction design 
+
+The layout of the page will be ± 80% “board” where cards will be displayed in, then the remaining 20% will be for the “new game” button and the score. When a user hovers over a card a box shadow will appear in the same shade as a legendary card in hearthstone. When a user clicks on a card, the card should flip around displaying a hero of hearthstone. The user then has to click on another card to see if the second card matches the first card. The cards will be on display for a few seconds before they flip around, if they do not match. If the cards do match, then the cards will be displayed constantly until a new game is started. The cards will not be able to be flipped over if they already match with another card. The game ends when all matching pairs have been found, or the user gives up and clicks “new game”. 
+
+To create meaningful relationships between the elements and content I aimed for consistency. I have the same text colour for the text, the card backs have the same style from an expansion from hearthstone and the front of the cards are the original 9 heroes a hearthstone player can get. Also while hovering over the cards; the box shadow will have the same shade. The same scenario will happen constantly; when a user clicks on a card its rotation is the same as for all the cards. Users who have played any memory game before can leverage from prior experience.This is to ensure that the expectation of convention is met.  
+
+Making sure that the game mechanics work and that all cards behave the same when clicked ensures that the functionality and interactivity is communicated to the user intuitively. All elements on the page are discoverable. There is a little content hinting (the box shadow) to pull the user into clicking the cards so that the animation can be shown and that the game can flow. 
+
+Once a user starts interacting with the cards by clicking on them then the orchestrated pattern of the game becomes visible. The game is very self-explanatory. If a user doesn’t grasp the concept immediately the new game button is there to start a new fresh game for the user to try and play again. The positioning of the board and the buttons will be in the same positions all the time; users do not have to worry about the game changing at any time.  
+
+All of the code to make this game is to ensure that the game produces zero user error; no matches with double click, no speed running and no false matches can happen. No matter on what device you are on, the game will still work the same way and it will work on whatever orientation the device is in. The cards will change size if the orientation is changed and the layout of the cards will be different if a different device is used. The same game cannot be played twice due to the random number generation. 
+
+The theme of hearthstone memory is to be different to make the game better. Classical images (like a red balloon) have been replaces with hearthstone heroes. This is to surprise the user in a positive manner so that their expectations are not met in a positive way.   
+
+There is no other content on the page to ensure that users are not distracted from the primary purpose of the game – to be played and to develop their brains. The game itself is sticking to traditional memory game conventions and is very intuitive. This is ensuring the website is learnable. 
+
+
 
 Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
 
