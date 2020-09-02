@@ -107,6 +107,7 @@ In this section, I mention all of the languages, frameworks, libraries, and any 
 ### Frameworks
 
 - [Bootstrap](https://getbootstrap.com/)
+- [Popper](https://popper.js.org/) - this as used with the bootstrap JS CDn
 
 ### libraries
 - [JQuery](https://jquery.com)
