@@ -16,11 +16,17 @@ Table of contents
     * [Scope Plane Requirement types](#Scope-Plane-Requirement-types)
     * [The structure Plane concerns](#The-structure-Plane-concerns)
     * [Interaction design](#Interaction-design)
+    * [Information architecture](#Information-architecture)
+    * [Architecture types](#Architecture-types)
+    * [principles of organisation](#Principles-of-organisation )
+    * [The Skeleton plane](#The-Skeleton-plane)
+    * [Habits & conventions](#Habits-&-conventions)
+    * [Features and usefulness](#Features-and-usefulness)
 * [Features](#Features)
 * [Technologies Used](#Technologies-Used)
 * [Testing](#Testing)
 * [Deployment](#Deployment)
-* [Credits](#Credits)_
+* [Credits](#Credits)
 <!--te-->
 
 
