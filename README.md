@@ -3,7 +3,9 @@
 Creating a custom memory game is something you would never think would be possible.
 I have decided to take one of my favorite (and addicting) video games and turn it into a memory game.
 This is "Hearthstone Memory". This is to be played in the exact same way as the original memory game, from Hasbros.
-Table of contents
+
+
+## Table of contents
 
 <!--ts-->
 * [UX](#UX)
@@ -262,37 +264,32 @@ resort to physical testing.
     - This also prevented the "high score" feature to be implemented 
     - page now refreshes and the game is reset properly but the highscore feature has to be removed.
 
-Essentially, in this 
-part you will want to go over all of your user stories 
-from the UX section and ensure that they all work as intended, 
-with the project providing an easy and straightforward way for 
-the users to achieve their goals.
-
-
-For any scenarios that have not been automated, test the user stories manually and provide as much detail as is relevant. A particularly useful form for describing your testing process is via scenarios, such as:
-
-In addition, you should mention in this section how your project looks and works on different browsers and screen sizes.
-
-You should also mention in this section any interesting bugs or problems you discovered during your testing, even if you haven't addressed them yet.
-
-If this section grows too long, you may want to split it off into a separate file and link to it from here.
+During development, the card distribution was not the same as the surface plane from the UX section. this is due to the sizes of the cards and their shape. only on some devices will there be an extra row with 2 cards or instead of three rows, there are 2 rows. This does not change the game at all but the display is not the exact same as the wireframes. This is slightly dissapointing but the main goal of not having the cards run over the "board" section is still achieved and that is the most important part. 
 
 ## Deployment [back to top](#Hearthstone-Memory-Game)
 
-This section should describe the process you went through to deploy the project to a hosting platform (e.g. GitHub Pages or Heroku).
+To be able to deploy this project, I used GitHub Pages. To do so: 
+- start at the repository in github (https://github.com/KeisGSmit/Milestone2)
+- click on the settings Tab
+- Scroll down to the section titled "GitHub Pages" 
+- I selected the master branch in the drop down list and then click save
+- The project will then be prepared and then will be live in about 5 minutes. 
 
-In particular, you should provide all details of the differences between the deployed version and the development version, if any, including:
-- Different values for environment variables (Heroku Config Vars)?
-- Different configuration files?
-- Separate git branch?
+There have been some differences in the developed version and the deployed version.  In the development version, each time a feature would be worked on, a seperate branch would be created and then the feature would be implemented to that seperate branch. When all the desired features for the branch have been added then a pull request would occur and the branch will be pulled to the master branch. From there another branch would be created. This proccess repeated until the final produuct is on the master branch. 
 
-In addition, if it is not obvious, you should also describe how to run your code locally.
-
-
+To be able to run the code locally on your own PC, do as follows; 
+- Start at the repository in github (https://github.com/KeisGSmit/Milestone2)
+- click on the green "code button", select "download zip"
+- select a place where this zip file will be saved on your device and unzip it
+- you can click and drag this unzipped file into a IDE application like VSC (see tachnologies used) to be able to edit the repository
+- You can open the unzipped file and double click on index.html to launch the product.    
 ## Credits [back to top](#Hearthstone-Memory-Game)
 
 ### Content 
-- The text for section Y was copied from the [Wikipedia article Z](https://en.wikipedia.org/wiki/Z)
+- The idea for the game mechanics was inspired by [helpfulgames.com]( https://www.helpfulgames.com/subjects/brain-training/memory.html)
+- The score was inspired by [stackoverfloww](https://stackoverflow.com/questions/22402777/html-javascript-button-click-counter)
+- The attempt to make a new game was inspired by [stackoverfloww] (https://stackoverflow.com/questions/30204473/adding-a-reset-new-game-button-to-code)
+- Inspiration for the game mechanics came form [scotch.io](https://scotch.io/tutorials/how-to-build-a-memory-matching-game-in-javascript)
 
 ### Media 
 - The card back was optained from [engadget](https://www.engadget.com/2014-02-26-new-hearthstone-card-backs-revealed.html)
@@ -311,3 +308,4 @@ In addition, if it is not obvious, you should also describe how to run your code
 ### Acknowledgements
 
 - I received inspiration for this project from Code Institute who recommended a memory game for my MS2. 
+- My game was tested by my 2 sisters who are 16 to help look for bugs
