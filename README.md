@@ -22,6 +22,7 @@ Table of contents
     * [The Skeleton plane](#The-Skeleton-plane)
     * [Habits & conventions](#Habits-&-conventions)
     * [Features and usefulness](#Features-and-usefulness)
+    * [The Surface Plane](#The-surface-plane)
 * [Features](#Features)
 * [Technologies Used](#Technologies-Used)
 * [Testing](#Testing)
@@ -68,7 +69,7 @@ Doing an existing product audit, I can see there are some improvements to be mad
 As this is an educational piece of work with no form of monetization to prevent a copyright violation, this section will be minimal as monetizing this, is unethical and unlawful. There will be no online purchases; the emotional transactions will be simple and basic, with no branding, minimal content with large images. If anything is to be said about this product in this section, it should be considered as a B2C product. 
 
 ### Strategy Trade-offs [back to top](#Hearthstone-Memory-Game)
-![UX images](assets/images/UXMS2.png)
+![UX images](assets/images/readme/UXMS2.png)
 
 Looking at what values I provide to set me apart from competitors is that I need to start by looking at the target audience. My target audience is children and teenagers. They are in the stages of brain development, thus minimal distractions need to be present. They also need to be accommodated on any device they are using. They might be advised by a guardian (teacher/parent) to play the game or do it out of free will. The final product needs to have a “gaming” feel to it, to distract them from the core purpose of the site; like taking medicine, if it tastes good then you will be more compelled to take it rather than hating it. 
 
@@ -84,7 +85,7 @@ The first feature is that “Cards must flip (animation)”. This is essential a
 
 Next looking at the hover animation, this is seen as an essential. This is a feature pulled from hearthstone, making it a key part of the theme. In hearthstone, when a user wants to expand their card collection, they need to open “packs”, these contain 5 cards. Common cards are silver, rare cards are blue, epic cards are purple and legendary cards are gold/yellow. Having a hover function that gives a box shadow that is the “same” shade as a legendary is to emphasise more on the hearthstone theme of this memory game. See image bellow. 
 
-![hover feature](assets/images/UXMS2cardHover.png)
+![hover feature](assets/images/readme/UXMS2cardHover.png)
 
 Being able to perfectly execute the game mechanics is a must. This feature is the most important part of the project. This is the core of the project, if this fails then the project fails, thus this cannot be replaced. 
 
@@ -125,14 +126,52 @@ The theme of hearthstone memory is to be different to make the game better. Clas
 
 There is no other content on the page to ensure that users are not distracted from the primary purpose of the game – to be played and to develop their brains. The game itself is sticking to traditional memory game conventions and is very intuitive. This is ensuring the website is learnable. 
 
+### Information architecture [back to top](#Hearthstone-Memory-Game)
 
+There are currently no forms of navigation to the site. Its raw form is a game. Until further levels have been incorporated there will be no navigation. When more levels have been incorporated then the use of a drop down box with the different levels can be incorporated. Each item in the drop down lost will be a hyperlink to a new website with a different game.  
 
-Use this section to provide insight into your UX process, focusing on who this website is for, what it is that they want to achieve and how your project is the best way to help them achieve these things.
+To facilitate the future changes the drop down box will most likely come under the score of the player. 
 
-In particular, as part of this section we recommend that you provide a list of User Stories, with the following general structure:
+### Architecture types [back to top](#Hearthstone-Memory-Game)
+
+Due to the simplicity of this site, there is little to no consideration for the architecture type of the site as it consists of only one page. In future updates (scoreboard working, high score feature incorporated, levels etc.. ) the most likely architecture type we can expect is the tree structure, which is standard; to reduce complexity and to make use of the “three click” rule of thumb. The only issue is that it will be complicated on mobile but to compensate for that the drop down menu list with link to other sites simplifies the problem
+
+### Principles of organisation [back to top](#Hearthstone-Memory-Game)
+
+The principles of organisation I used follow the organising rules of thumb. The highest level of the site is most closely tied to the user needs – the memory game. There are no organising rules at lower levels because future specs have not been incorporated and the content requirements are minimal. The collection of cards are placed in a board for conceptual structure, and the same applies to the score and the new game button – they have been placed in a separate div. We know that the cards are displayed together in rows and columns – traditionally and I tried to replicate that in my game. The “new game” button and score are not mixed in with the cards to satisfy user needs and for easy of convention. 
+
+### The skeleton plane [back to top](#Hearthstone-Memory-Game)
+
+The form the application will have to take will have to be a single site that fills the entire screen – no matter the orientation of the device. All cards need to be visible at all times including the new game button and the score.  No navigation is necessary. The content will be presented in the form of images, buttons and text. The images will be the cards that should be larger than the “new game” button and the text to draw attention to the game. The cards should be in rows and columns that do not overlap so that each card can be clicked, seen and can be read. 
+
+### Habits & conventions [back to top](#Hearthstone-Memory-Game)
+Looking at the habits & conventions of users that play memory is that they place the cards face down, then they shuffle their cards, then organise their cards in rows and columns, then play the game. I programmed my code to do the same. Before the page is loaded the face down cards are shuffled and then the cards are sorted into their rows and columns. This is to match the expectations of the project – creating a playable memory game. Breaking the code to break from convention was a bad idea – regarding the attempt to program the new game button (merge 8?). It was an attempt to better the product but it did not work.  
+
+The use of visual iconography especially on the new game button and the cards helps users to understand what is going on, on the site. It allows the user’s to comprehend what is going on. They are then inclined to play the game. 
+
+### Features and usefulness [back to top](#Hearthstone-Memory-Game)
+
+Hearthstone memory gives the users a memory game. They can access it anywhere and at any time. Using only a visual format attempts to provide the users with a need to want to access/interact with the game. This directs the user to believe that the UI is the system. With the current layout and design the UI allows immediate interaction and promotes first tie learning. The mild theme makes it audience appropriate. I believe the current product perfectly meets the needs of its intended audience. 
+
+### The surface plane [back to top](#Hearthstone-Memory-Game)
+
+These images describe how the general layout will be for desktop and mobile devices.
+
+![desktop plan](assets/images/readme/MS2Desktop.png)
+
+![Tablet plan](assets/images/readme/MS2Tablet.png)
+
+![Mobile plan](assets/images/readme/MS2Mobile.png)
+
+A list of User Stories, with the following general structure:
+
 - As a user type, I want to perform an action, so that I can achieve a goal.
 
-This section is also where you would share links to any wireframes, mockups, diagrams etc. that you created as part of the design process. These files should themselves either be included as a pdf file in the project itself (in an separate directory), or just hosted elsewhere online and can be in any format that is viewable inside the browser.
+This section is also where you would share links to any wireframes,
+ mockups, diagrams etc. that you created as part of the design process.
+  These files should themselves either be included as a pdf file in the project 
+  itself (in an separate directory), or just hosted elsewhere online and can be 
+  in any format that is viewable inside the browser.
 
 ## Features [back to top](#Hearthstone-Memory-Game)
 
