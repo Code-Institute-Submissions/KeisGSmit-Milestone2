@@ -163,30 +163,26 @@ These images describe how the general layout will be for desktop and mobile devi
 
 ![Mobile plan](assets/images/readme/MS2Mobile.png)
 
-A list of User Stories, with the following general structure:
-
-- As a user type, I want to perform an action, so that I can achieve a goal.
-
-This section is also where you would share links to any wireframes,
- mockups, diagrams etc. that you created as part of the design process.
-  These files should themselves either be included as a pdf file in the project 
-  itself (in an separate directory), or just hosted elsewhere online and can be 
-  in any format that is viewable inside the browser.
-
 ## Features [back to top](#Hearthstone-Memory-Game)
 
-In this section, you should go over the different parts of your project, and describe each in a sentence or so.
+There are multiple features inside this product. Firstly the cards must be able to flip. This has been done using CSS, especially using the transform property and and the perspective property.
+The hover animation was done using the CSS box shadow and the :hover psuedo class. 
+The game Mechanics were written in JavaScript. A more detailed explination on the javascript can be found in assets/js/script.js. 
+The "new game" button acts as a page refresh button to restart the game, as spoken about in the UX; the code to prevent bugs causes this. 
+The Theme of the game was inspired by "hearthstone" owned by Blizzard. 
+The responsive design allows for different types of devices and users to be able to use the product.
  
 ### Existing Features 
-- Feature 1 - allows users X to achieve Y, by having them fill out Z
-- ...
-
-For some/all of your features, you may choose to reference the specific project files that implement them, although this is entirely optional.
-
-In addition, you may also use this section to discuss plans for additional features to be implemented in the future:
+- The flip animation - Is designed to draw user's attention and look realistic
+- The hover animation - Is designed to resemeble Hearthstone "pack opening" which is a core part of it's theme
+- The Game mechanics - This is to allow the game game to be as full functional as possible. 
+- The New Game button - This allows the user to start a new game of they completed the game or have given up and want to try again. 
+- The Media - This coincides with the theme of the memory game - Hearthstone
+- The Responsive design - This allows different devices to experience the same product with minimal variations.  
 
 ### Features Left to Implement 
-- Another feature idea
+- A proper New Game button that works without having to refresh the page
+- A High Score system so users can attempt to break their personal best
 
 ## Technologies Used [back to top](#Hearthstone-Memory-Game)
 
