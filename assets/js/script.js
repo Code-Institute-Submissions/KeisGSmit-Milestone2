@@ -44,7 +44,7 @@ function matchCheck() {
   } else {
     unflip();
   }
-};
+}
 
 /**
  * cardDisable has been created to disable the 'cards' of being clicked so that they can not be flipped once they match.
@@ -53,14 +53,14 @@ function cardDisable() {
   $(firstCard).off("click");
   $(secondCard).off("click");
   resetBoard();
-};
+}
 
 function resetBoard() {
   cardFlipped = false;
   lock = false;
   firstCard = null;
   secondCard = null;
-};
+}
 
 function unflip() {
   //This was to lock the board so that no cards can be flipped while other cards are exposed to the user

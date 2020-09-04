@@ -205,6 +205,7 @@ In this section, I mention all of the languages, frameworks, libraries, and any 
 - [VSC](https://code.visualstudio.com/download) 
 - [Microsoft Office](https://www.office.com/)
 - [favicon](https://www.favicon.cc/)
+- [JSHint](https://jshint.com/)
 
 ### Frameworks
 
