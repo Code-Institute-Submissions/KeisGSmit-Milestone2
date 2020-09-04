@@ -9,7 +9,7 @@
   padding: 0;
   margin: 0;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   font-size: 16px;
 }
 
@@ -28,10 +28,10 @@ body {
   height: 100vh;
   width: 100vw;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   margin: auto;
   -webkit-perspective: 1000px;
-          perspective: 1000px;
+  perspective: 1000px;
 }
 .card {
   background: none;
@@ -39,10 +39,10 @@ body {
   height: 0.3rem;
   position: relative;
   -webkit-transform: scale(1);
-      -ms-transform: scale(1);
-          transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
   -webkit-transform-style: preserve-3d;
-          transform-style: preserve-3d;
+  transform-style: preserve-3d;
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   -o-transition: transform 0.5s;
@@ -51,7 +51,7 @@ body {
 }
 .card.flip {
   -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 img {
   height: auto;
@@ -61,12 +61,12 @@ img {
 }
 img:hover {
   -webkit-box-shadow: 0 0 20px 20px #d4d45b;
-          box-shadow: 0 0 20px 20px #d4d45b;
+  box-shadow: 0 0 20px 20px #d4d45b;
 }
 .card:active {
   -webkit-transform: scale(0.97);
-      -ms-transform: scale(0.97);
-          transform: scale(0.97);
+  -ms-transform: scale(0.97);
+  transform: scale(0.97);
   -webkit-transition: -webkit-transform 0.5s;
   transition: -webkit-transform 0.5s;
   -o-transition: transform 0.5s;
@@ -75,13 +75,13 @@ img:hover {
 }
 .front {
   -webkit-transform: rotateY(180deg);
-          transform: rotateY(180deg);
+  transform: rotateY(180deg);
 }
 .back,
 .front {
   position: absolute;
   -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 p {
   color: aliceblue;
